@@ -9,10 +9,10 @@ namespace GradeCalculation
 {
     class GradeWorkingOut : Form
     {
-        public static float StudentGradeInput { get; internal set; }
-        public static float StudentPaperInput { get; internal set; }
-        public static float Rounding { get; internal set; }
-        public static String PaperMark { get; internal set; }
+        public static float StudentGradeInput { get; set; }
+        public static float StudentPaperInput { get; set; }
+        public static float Rounding { get; set; }
+        public static string PaperMark { get; set; }
 
         public void Grading()
         {         
@@ -20,12 +20,6 @@ namespace GradeCalculation
             {
                 //calls the method which contains the alphabetical grade of the user
                 AlphabetGrades();
-
-                //This rounds the float to two decimal places 
-                Rounding = (float)Math.Round(StudentGradeInput * StudentPaperInput / 100, 2);
-
-                //Outputs the final grade so they know the overall percentage for the paper/assignment            
-                GradeCalculation.OverallGrade.Text = PaperMark = Convert.ToString(Rounding);
             }
             catch (Exception)
             {
@@ -37,7 +31,7 @@ namespace GradeCalculation
         {
             try
             {
-                String Grade = "";
+                string Grade = " ";
 
                 switch (Grade)
                 {
