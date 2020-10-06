@@ -18,26 +18,19 @@ namespace GradeCalculation
         {         
             try
             {
-                //Gets the inputted student grade and then converts it from text to a float
-                StudentGradeInput = float.Parse(StudentGrade.Text);
-                //Gets the inputted percentage of the paper/assignment and then converts it from text to a float
-                StudentPaperInput = float.Parse(PaperPrecentage.Text);
-                //This rounds the float to two decimal places 
-                Rounding = (float)Math.Round(StudentGradeInput * StudentPaperInput / 100, 2);
-                //Outputs the final grade so they know the overall percentage for the paper/assignment            
-                OverallGrade.Text = PaperMark = Convert.ToString(Rounding);
-                
                 //calls the method which contains the alphabetical grade of the user
                 AlphabetGrades();
+
+                //This rounds the float to two decimal places 
+                Rounding = (float)Math.Round(StudentGradeInput * StudentPaperInput / 100, 2);
+
+                //Outputs the final grade so they know the overall percentage for the paper/assignment            
+                GradeCalculation.OverallGrade.Text = PaperMark = Convert.ToString(Rounding);
             }
             catch (Exception)
             {
                 MessageBox.Show("Please enter a value");
-            }
-
-                
-            return;
-            
+            }                        
         }
         //Contains the Alphabetical Grades in realtion to the percentage the user has
         public void AlphabetGrades()

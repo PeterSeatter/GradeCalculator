@@ -13,6 +13,9 @@ namespace GradeCalculation
 {
     public partial class GradeCalculation : Form
     {
+        //creating the global object GradeWorkOut which calls on GradeWorkingOut class
+        GradeWorkingOut GradeWorkOut = new GradeWorkingOut();
+
         public GradeCalculation()
         {
             InitializeComponent();
@@ -42,9 +45,7 @@ namespace GradeCalculation
         public void GradeButton_Click(object sender, EventArgs e)
         {
             try
-            {
-                //creating the object GradeWorkOut which calls on GradeWorkingOut class
-                GradeWorkingOut GradeWorkOut = new GradeWorkingOut();
+            {              
                 GradeWorkOut.Grading();
             }
             catch (Exception)
@@ -52,5 +53,15 @@ namespace GradeCalculation
                 MessageBox.Show ("It's not communicating with GradeWorkingOut");
             }
         }
+
+        public void GradesWorkOut()
+        {
+            //Gets the inputted student grade and then converts it from text to a float
+            GradeWorkingOut.StudentGradeInput = float.Parse(StudentGrade.Text);
+            //Gets the inputted percentage of the paper/assignment and then converts it from text to a float
+            GradeWorkingOut.StudentPaperInput = float.Parse(PaperPrecentage.Text);
+
+        }
     }
+
 }

@@ -15,3 +15,6 @@ E:\Programming\GradeCalculator\GradeCalculation\obj\Debug\GradeCalculation.cspro
 E:\Programming\GradeCalculator\GradeCalculation\obj\Debug\GradeCalculation.csproj.CoreCompileInputs.cache
 E:\Programming\GradeCalculator\GradeCalculation\obj\Debug\GradeCalculation.exe
 E:\Programming\GradeCalculator\GradeCalculation\obj\Debug\GradeCalculation.pdb
+E:\Programming\GradeCalculator\GradeCalculation\bin\Debug\GradeCalculation.exe.config
+E:\Programming\GradeCalculator\GradeCalculation\bin\Debug\GradeCalculation.exe
+E:\Programming\GradeCalculator\GradeCalculation\bin\Debug\GradeCalculation.pdb
