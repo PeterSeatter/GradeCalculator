@@ -14,6 +14,8 @@ namespace GradeCalculation
         public static float Rounding { get; set; }
         public static string PaperMark { get; set; }
 
+        public static string Letter { get; set; }
+
         public void Grading()
         {         
             try
@@ -31,85 +33,86 @@ namespace GradeCalculation
         {
             try
             {
-                string Grade = " ";
 
-                switch (Grade)
+                Letter = Convert.ToString(GradeWorkingOut.Rounding);
+
+                switch (Letter)
                 {
-                    case "A+":
+                    case "90":
                         if (Rounding >= 90)
                         {
-                            Grade = "A+";
+                            Letter = "A+";
                         }
                         break;
 
-                    case "A":
+                    case "85":
                         if (Rounding >= 85)
                         {
-                            Grade = "A";
+                            Letter = "A";
                         }
                         break;
 
-                    case "A-":
+                    case "80":
                         if (Rounding >= 80)
                         {
-                            Grade = "A-";
+                            Letter = "A-";
                         }
                         break;
 
-                    case "B+":
+                    case "75":
                         if (Rounding >= 75)
                         {
-                            Grade = "B+";
+                            Letter = "B+";
                         }
                         break;
 
-                    case "B":
+                    case "70":
                         if (Rounding >= 70)
                         {
-                            Grade = "B";
+                            Letter = "B";
                         }
                         break;
 
-                    case "B-":
+                    case "65":
                         if (Rounding >= 65)
                         {
-                            Grade = "B-";
+                            Letter = "B-";
                         }
                         break;
 
-                    case "C+":
+                    case "60":
                         if (Rounding >= 60)
                         {
-                            Grade = "C+";
+                            Letter = "C+";
                         }
                         break;
 
-                    case "C":
+                    case "55":
                         if (Rounding >= 55)
                         {
-                            Grade = "C";
+                            Letter = "C";
                         }
                         break;
 
-                    case "C-":
+                    case "50":
                         if (Rounding >= 50)
                         {
-                            Grade = "C-";
+                            Letter = "C-";
                         }
                         break;
 
 
-                    case "D":
+                    case "40":
                         if (Rounding >= 40)
                         {
-                            Grade = "D";
+                            Letter = "D";
                         }
                         break;
 
-                    case "F":
+                    case "0":
                         if (Rounding >= 0)
                         {
-                            Grade = "F";
+                            Letter = "F";
                         }
                         break;
                 }

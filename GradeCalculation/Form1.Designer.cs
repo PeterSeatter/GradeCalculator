@@ -35,7 +35,7 @@
             this.OverallGradeLabel = new System.Windows.Forms.Label();
             this.OverallGrade = new System.Windows.Forms.TextBox();
             this.GradeButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.GradeLetter = new System.Windows.Forms.TextBox();
             this.Percentage = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -116,16 +116,16 @@
             this.GradeButton.UseVisualStyleBackColor = true;
             this.GradeButton.Click += new System.EventHandler(this.GradeButton_Click);
             // 
-            // textBox1
+            // GradeLetter
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(835, 99);
-            this.textBox1.MaxLength = 3;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(81, 38);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.GradeLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GradeLetter.Location = new System.Drawing.Point(835, 99);
+            this.GradeLetter.MaxLength = 3;
+            this.GradeLetter.Name = "GradeLetter";
+            this.GradeLetter.ReadOnly = true;
+            this.GradeLetter.Size = new System.Drawing.Size(81, 38);
+            this.GradeLetter.TabIndex = 7;
+            this.GradeLetter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Percentage
             // 
@@ -185,7 +185,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Percentage);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.GradeLetter);
             this.Controls.Add(this.GradeButton);
             this.Controls.Add(this.OverallGrade);
             this.Controls.Add(this.OverallGradeLabel);
@@ -209,7 +209,7 @@
         private System.Windows.Forms.Label OverallGradeLabel;
         private System.Windows.Forms.TextBox OverallGrade;
         private System.Windows.Forms.Button GradeButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox GradeLetter;
         private System.Windows.Forms.TextBox Percentage;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

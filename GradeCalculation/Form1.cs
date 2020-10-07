@@ -46,7 +46,9 @@ namespace GradeCalculation
         {
             try
             {
+                //it calls the Method for working out the grade
                 GradesWorkOut();
+                //This gets the code which is in the GradeWorkOut which contains the alphabet grades
                 GradeWorkOut.Grading();
             }
             catch (Exception)
@@ -65,6 +67,8 @@ namespace GradeCalculation
             GradeWorkingOut.Rounding = (float)Math.Round(GradeWorkingOut.StudentGradeInput * GradeWorkingOut.StudentPaperInput / 100, 2);
             //Outputs the final grade so they know the overall percentage for the paper/assignment   
             OverallGrade.Text = GradeWorkingOut.PaperMark = Convert.ToString(GradeWorkingOut.Rounding);
+            //Outputs the letter of the grade
+            GradeLetter.Text = GradeWorkingOut.Letter;
         }
     }
 
