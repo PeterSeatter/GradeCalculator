@@ -82,6 +82,7 @@
             this.PaperPrecentage.Size = new System.Drawing.Size(70, 38);
             this.PaperPrecentage.TabIndex = 3;
             this.PaperPrecentage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PaperPrecentage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PaperPrecentage_KeyDown);
             this.PaperPrecentage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PaperPrecentage_KeyPress);
             // 
             // OverallGradeLabel
@@ -115,6 +116,7 @@
             this.GradeButton.Text = "Grades";
             this.GradeButton.UseVisualStyleBackColor = true;
             this.GradeButton.Click += new System.EventHandler(this.GradeButton_Click);
+            this.GradeButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GradeButton_KeyPress);
             // 
             // GradeLetter
             // 

@@ -42,6 +42,18 @@ namespace GradeCalculation
             }
         }
 
+        private void PaperPrecentage_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //it calls the Method for working out the grade
+                GradesWorkOut();
+                //This gets the code which is in the GradeWorkOut which contains the alphabet grades
+                GradeWorkOut.Grading();
+                e.SuppressKeyPress = true;
+            }
+        }
+
         public void GradeButton_Click(object sender, EventArgs e)
         {
             try
@@ -53,7 +65,22 @@ namespace GradeCalculation
             }
             catch (Exception)
             {
-                MessageBox.Show ("It's not communicating with GradeWorkingOut");
+                MessageBox.Show("It's not communicating with GradeWorkingOut");
+            }
+        }
+
+        private void GradeButton_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                //it calls the Method for working out the grade
+                GradesWorkOut();
+                //This gets the code which is in the GradeWorkOut which contains the alphabet grades
+                GradeWorkOut.Grading();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("It's not communicating with GradeWorkingOut");
             }
         }
 
@@ -71,5 +98,4 @@ namespace GradeCalculation
             GradeLetter.Text = GradeWorkingOut.Letter;
         }
     }
-
 }
