@@ -105,6 +105,7 @@
             this.OverallGrade.Size = new System.Drawing.Size(101, 38);
             this.OverallGrade.TabIndex = 5;
             this.OverallGrade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.OverallGrade.TextChanged += new System.EventHandler(this.GradeButton_Click);
             // 
             // GradeButton
             // 
@@ -128,6 +129,7 @@
             this.GradeLetter.Size = new System.Drawing.Size(81, 38);
             this.GradeLetter.TabIndex = 7;
             this.GradeLetter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.GradeLetter.TextChanged += new System.EventHandler(this.GradeButton_Click);
             // 
             // Percentage
             // 
