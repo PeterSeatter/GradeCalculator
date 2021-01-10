@@ -91,7 +91,7 @@ namespace GradeCalculation
             //Gets the inputted percentage of the paper/assignment and then converts it from text to a float
             GradeWorkingOut.StudentPaperInput = float.Parse(PaperPrecentage.Text);
             //This rounds the float to two decimal places 
-            GradeWorkingOut.Rounding = (float)Math.Round(GradeWorkingOut.StudentGradeInput * GradeWorkingOut.StudentPaperInput / 100, 2);
+            GradeWorkingOut.Rounding = (float)Math.Round((GradeWorkingOut.StudentGradeInput + GradeWorkingOut.StudentPaperInput) / 2);
             //Outputs the final grade so they know the overall percentage for the paper/assignment   
             OverallGrade.Text = GradeWorkingOut.PaperMark = Convert.ToString(GradeWorkingOut.Rounding);
             //Outputs the letter of the grade
